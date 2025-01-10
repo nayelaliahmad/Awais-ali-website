@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awais Ali - Professional Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9f00, #ff0080);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        h1, p {
+            margin: 0;
+        }
+
+        .txt-center {
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #2d3436;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 80%;
+            list-style: none;
+            height: 60px;
+            border-radius: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            transition: transform 0.3s ease;
+            position: relative;
+            z-index: 10;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 12px;
+            letter-spacing: 1px;
+            transition: transform 0.3s ease, color 0.3s ease;
+            position: relative;
+        }
+
+        .nav li a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #f39c12;
+            transition: width 0.3s ease;
+        }
+
+        .nav li a:hover::after {
+            width: 100%;
+        }
+
+        .nav li a:hover {
+            color: #f39c12;
+            transform: scale(1.1) translateZ(0);
+        }
+
+        .block-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .text-shadow {
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        #home {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        #home h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        #home p {
+            font-size: 1.4rem;
+            color: #fff;
+            max-width: 700px;
+            line-height: 1.8;
+            animation: fadeIn 1s ease-out 0.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #services-link {
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: #3300ffa5;
+            background-color: #ff9f00;
+            padding: 12px 30px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        #services-link:hover {
+            background-color: #ff0080;
+            color: white;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="block-center">
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <section id="home">
+        <h1 class="txt-center text-shadow">Welcome to Awais Ali Service</h1>
+        <p class="txt-center">
+            My name is Awais Ali. I am a professional worker, electrician, plumber, painter, woodcutter, barber, a good cook, fast worker, and much more. 
+            Currently, I am working at Denz Consultants and Solutions. My boss, Taimoor Ali Ahmad, has vast experience, and I have learned a lot from him. 
+            I am also a car washer and a great chef. I am passionate about many things and continue to learn from my mentor, Mr. Nayel Ali Ahmad.
+        </p>
+        <a id="services-link" href="services.html">Check out my services</a>
+    </section>
+
+</body>
+
+</html>

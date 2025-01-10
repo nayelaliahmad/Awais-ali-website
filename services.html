@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awais Ali - Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff0099, #ff6a00);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        h1, p {
+            margin: 0;
+        }
+
+        .txt-center {
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #2d3436;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 80%;
+            list-style: none;
+            height: 60px;
+            border-radius: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            transition: transform 0.3s ease;
+            position: relative;
+            z-index: 10;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 12px;
+            letter-spacing: 1px;
+            transition: transform 0.3s ease, color 0.3s ease;
+            position: relative;
+        }
+
+        .nav li a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #f39c12;
+            transition: width 0.3s ease;
+        }
+
+        .nav li a:hover::after {
+            width: 100%;
+        }
+
+        .nav li a:hover {
+            color: #f39c12;
+            transform: scale(1.1) translateZ(0);
+        }
+
+        #service {
+            padding: 40px;
+            text-align: center;
+            animation: fadeInUp 1.5s ease-out 0.5s forwards;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #service h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .ser {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1.4rem;
+            color: #fff;
+            text-align: center;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .ser li {
+            margin: 20px 0;
+            padding: 15px;
+            background: #ff0080;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .ser li:hover {
+            transform: translateY(-10px);
+            background-color: #ff6a00;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="block-center">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <section id="service">
+        <h1 class="txt-center">My Services</h1>
+        <ul class="ser">
+            <li>Professional Cleaning</li>
+            <li>Car Washing</li>
+            <li>Consultant</li>
+            <li>Joker</li>
+            <li>All in ONE</li>
+            <li>Plumber</li>
+            <li>Electrician</li>
+        </ul>
+    </section>
+
+</body>
+
+</html>

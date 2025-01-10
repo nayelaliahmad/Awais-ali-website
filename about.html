@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Awais Ali</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff0099, #ff6a00);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        h1, p {
+            margin: 0;
+        }
+
+        .txt-center {
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #2d3436;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 80%;
+            list-style: none;
+            height: 60px;
+            border-radius: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            transition: transform 0.3s ease;
+            position: relative;
+            z-index: 10;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 12px;
+            letter-spacing: 1px;
+            transition: transform 0.3s ease, color 0.3s ease;
+            position: relative;
+        }
+
+        .nav li a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #f39c12;
+            transition: width 0.3s ease;
+        }
+
+        .nav li a:hover::after {
+            width: 100%;
+        }
+
+        .nav li a:hover {
+            color: #f39c12;
+            transform: scale(1.1) translateZ(0);
+        }
+
+        #about {
+            padding: 40px;
+            text-align: center;
+            animation: fadeInUp 1.5s ease-out 0.5s forwards;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #about h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        #about .about-content {
+            font-size: 1.4rem;
+            color: #fff;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        #about .about-content:hover {
+            transform: translateY(-10px);
+            background-color: #ff6a00;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        #about img {
+            margin-top: 40px;
+            width: 250px;
+            border-radius: 50%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        #about img:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="block-center">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <section id="about">
+        <h1 class="txt-center">About Awais Ali</h1>
+
+        <div class="about-content">
+            <p>
+                I am Awais Ali. I have struggled a lot throughout my life, but through determination and hard work, I am now in a good position. I am constantly working towards my dream and pushing forward, knowing that every step counts.
+            </p>
+        </div>
+
+        <div>
+            <img src="aw.png" alt="Awais Ali">
+        </div>
+    </section>
+
+</body>
+
+</html>
